@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thejaswini RK | Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+        }
+    </script>
+  
+</head>
+
+<body class="overflow-x-hidden perspective-1000
+bg-gradient-to-br from-slate-50 via-white to-purple-50
+dark:from-gray-950 dark:via-gray-900 dark:to-black
+text-gray-900 dark:text-white transition-all duration-500">
+
+<!-- Background Glow -->
+
+<div class="fixed inset-0 -z-10 overflow-hidden">
+
+<div class="absolute -top-40 -left-32 w-96 h-96 bg-purple-400 rounded-full blur-[140px] opacity-20"></div>
+
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-orange-300 rounded-full blur-[140px] opacity-20"></div>
+
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<nav id="navbar"
+class="fixed top-0 left-0 w-full z-50
+bg-white/70 dark:bg-gray-900/70
+backdrop-blur-xl
+border-b border-gray-200 dark:border-gray-800
+transition-all duration-300">
+
+<div class="max-w-9xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+
+    <img src="./images/logo2.png"
+         class="w-28 cursor-pointer dark:invert"
+         alt="Logo">
+
+<ul class="hidden md:flex items-center gap-10">
+
+<li><a href="#top" class="hover:text-purple-600 duration-300">Home</a></li>
+
+<li><a href="#about" class="hover:text-purple-600 duration-300">About</a></li>
+
+<li><a href="#projects" class="hover:text-purple-600 duration-300">Projects</a></li>
+
+<li><a href="#contact" class="hover:text-purple-600 duration-300">Contact</a></li>
+
+</ul>
+
+<div class="flex items-center gap-4">
+
+<button id="theme-toggle"
+class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800">
+
+<img id="theme-icon"
+src="./images/night.png"
+class="w-6">
+
+</button>
+
+<button onclick="openMenu()" class="md:hidden">
+
+<img src="./images/menu.png"
+class="w-6">
+
+</button>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Mobile Menu -->
+
+<ul id="sideMenu"
+class="fixed top-0 right-0 w-72 h-screen
+bg-white dark:bg-gray-900
+translate-x-full
+transition-transform duration-500
+flex flex-col gap-7 pt-24 px-8
+md:hidden z-50">
+
+<img src="./images/close.png"
+onclick="closeMenu()"
+class="w-6 absolute top-7 right-7 cursor-pointer">
+
+<li><a href="#top" onclick="closeMenu()">Home</a></li>
+
+<li><a href="#about" onclick="closeMenu()">About</a></li>
+
+<li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+
+<li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+
+</ul>
+
+
+
+<section id="top"
+class="min-h-screen flex items-center pt-28 px-6 lg:px-16">
+
+<div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+<!-- Left -->
+
+<div>
+
+<span class="px-5 py-2 rounded-full bg-purple-100 text-purple-700 font-medium">
+
+👋 Welcome to my Portfolio
+
+</span>
+
+<h1 class="mt-8 text-5xl md:text-6xl lg:text-7xl font-black leading-tight">
+
+Hi, I'm
+
+<span class="block bg-gradient-to-r
+from-violet-600
+via-fuchsia-500
+to-orange-500
+bg-clip-text
+text-transparent">
+
+Thejaswini RK
+
+</span>
+
+</h1>
+
+<h2 class="mt-5 text-2xl font-semibold text-gray-700 dark:text-gray-300">
+
+M.Sc. Computer Science Graduate
+
+</h2>
+
+<p class="mt-7 text-lg leading-8 text-gray-600 dark:text-gray-400 max-w-xl">
+
+Passionate about Software Development, Artificial Intelligence,
+Web Development and Mobile App Development.
+
+I enjoy creating modern, responsive applications and solving
+real-world problems using technology.
+
+</p>
+
+<div class="flex flex-wrap gap-5 mt-10">
+
+<a href="#contact"
+class="px-8 py-4 rounded-full
+bg-gradient-to-r from-purple-600 to-orange-500
+text-white
+font-semibold
+shadow-xl
+hover:scale-105
+hover:shadow-purple-300
+duration-300">
+
+Contact Me
+
+</a>
+
+<a href="./images/resume.pdf" 
+
+class="px-8 py-4 rounded-full
+bg-white dark:bg-gray-800
+border border-gray-300 dark:border-gray-700
+shadow-lg
+hover:-translate-y-1
+duration-300">
+
+Download Resume
+
+</a>
+
+</div>
+
+<div class="grid grid-cols-3 gap-8 mt-16">
+
+<div>
+
+<h3 class="text-4xl font-bold text-purple-600">
+
+3+
+
+</h3>
+
+<p class="text-gray-500 dark:text-gray-400">
+
+Projects
+
+</p>
+
+</div>
+
+<div>
+
+<h3 class="text-4xl font-bold text-orange-500">
+
+8+
+
+</h3>
+
+<p class="text-gray-500 dark:text-gray-400">
+
+Skills
+
+</p>
+
+</div>
+
+<div>
+
+<h3 class="text-4xl font-bold text-pink-500">
+
+100%
+
+</h3>
+
+<p class="text-gray-500 dark:text-gray-400">
+
+Passion
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Right -->
+
+<div class="flex justify-center">
+
+<div class="relative">
+
+<div class="absolute inset-0 bg-purple-500 rounded-full blur-[120px] opacity-30 animate-pulse"></div>
+
+<div class="absolute -inset-5 rounded-full border-2 border-purple-300 animate-spin"
+style="animation-duration:20s;">
+</div>
+
+<img src="./images/profile.jpeg"
+class="relative w-80 lg:w-[430px]
+rounded-full
+border-8 border-white dark:border-gray-900
+shadow-[0_35px_60px_rgba(0,0,0,0.35)]
+profile-3d float-3d">
+
+<div class="absolute -left-8 bottom-10
+bg-white dark:bg-gray-800
+rounded-2xl
+shadow-xl
+px-6 py-4">
+
+<p class="text-gray-500 text-sm">
+
+Available For
+
+</p>
+
+<h4 class="font-bold">
+
+Software Developer
+
+</h4>
+
+</div>
+
+<div class="absolute top-10 -right-6
+w-16 h-16
+rounded-full
+bg-white dark:bg-gray-800
+shadow-xl
+flex items-center justify-center
+animate-bounce">
+
+💻
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ------------------about me----------------- -->
+ <!-- ================= ABOUT ================= -->
+
+<!-- ===== About: text slides in from the sides ===== -->
+<style>
+    .js .slide-item {
+        opacity: 0;
+        filter: blur(6px);
+        transition:
+            opacity .9s cubic-bezier(.2, .8, .2, 1) var(--delay, 0s),
+            transform .9s cubic-bezier(.2, .8, .2, 1) var(--delay, 0s),
+            filter .9s ease var(--delay, 0s);
+    }
+    .js .slide-item.from-left  { transform: translateX(-120px); }
+    .js .slide-item.from-right { transform: translateX(120px); }
+
+    .js #about.in .slide-item {
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
+
+    /* Keeps sliding text from causing a horizontal scrollbar */
+    #about { overflow-x: clip; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .js .slide-item { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
+    }
+</style>
+
+<section id="about" class="py-24 px-6 lg:px-16">
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Heading -->
+        <div class="text-center">
+
+            <span class="slide-item from-left inline-block uppercase tracking-[5px] text-purple-600 font-semibold"
+                  style="--delay: 0s">
+                About Me
+            </span>
+
+            <h2 class="slide-item from-right text-5xl font-bold mt-4"
+                style="--delay: .25s">
+                Who Am I?
+            </h2>
+
+            <p class="mt-5 max-w-3xl mx-auto text-gray-600 dark:text-gray-400 leading-8">
+
+                <span class="slide-item from-left block" style="--delay: .5s">
+                    I recently completed my M.Sc. in Computer Science and enjoy
+                    developing modern web and mobile applications.
+                </span>
+
+                <span class="slide-item from-right block" style="--delay: .75s">
+                    I am passionate about Artificial Intelligence, Python, Django,
+                    Flutter, and solving real-world problems using technology.
+                </span>
+
+            </p>
+
+        </div>
+
+        <!-- ⬇ Keep the rest of your about content here, and your own closing </div> and </section> tags -->
+<script>
+    (function () {
+        document.documentElement.classList.add('js');
+
+        const section = document.getElementById('about');
+        if (!section) return;
+
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(en => {
+                if (en.isIntersecting) {
+                    section.classList.add('in');
+                } else {
+                    section.classList.remove('in'); // remove this line to play only once
+                }
+            });
+        }, { threshold: 0.25 });
+
+        io.observe(section);
+    })();
+</script>
+
+        <div class="grid lg:grid-cols-2 gap-20 items-center mt-20">
+
+           <!-- ===== Advanced Animated Profile Showcase (no orbit) ===== -->
+<style>
+    #showcase { --rx: 0deg; --ry: 0deg; --mx: 50%; --my: 50%; --px: 0; --py: 0; }
+
+    /* ---------- Keyframes ---------- */
+    @keyframes morph {
+        0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; transform: rotate(0deg); }
+        33%      { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; transform: rotate(120deg); }
+        66%      { border-radius: 50% 50% 40% 60% / 40% 50% 60% 50%; transform: rotate(240deg); }
+    }
+    @keyframes gradientShift {
+        0%   { background-position: 0% 50%; }
+        100% { background-position: 300% 50%; }
+    }
+    @keyframes floatY {
+        0%, 100% { transform: translateY(0); }
+        50%      { transform: translateY(-16px); }
+    }
+    @keyframes chipFloat {
+        0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+        50%      { transform: translateY(-12px) rotate(calc(var(--r, 0deg) * -1)); }
+    }
+    @keyframes scan {
+        0%   { top: -10%; opacity: 0; }
+        10%  { opacity: 1; }
+        90%  { opacity: 1; }
+        100% { top: 110%; opacity: 0; }
+    }
+    @keyframes shine {
+        0%        { transform: translateX(-120%) skewX(-20deg); }
+        60%, 100% { transform: translateX(220%) skewX(-20deg); }
+    }
+    @keyframes wordIn  { from { opacity: 0; transform: translateY(10px); filter: blur(4px); } to { opacity: 1; transform: none; filter: none; } }
+    @keyframes wordOut { from { opacity: 1; transform: none; } to { opacity: 0; transform: translateY(-10px); filter: blur(4px); } }
+
+    /* ---------- Background blobs (mouse parallax) ---------- */
+    .blob-wrap { position: absolute; transition: transform .3s ease-out; pointer-events: none; }
+    .blob { width: 100%; height: 100%; animation: morph 14s ease-in-out infinite; filter: blur(70px); opacity: .35; }
+
+    /* ---------- Reveal on scroll (only hidden when JS is running) ---------- */
+    .js .sc-reveal { opacity: 0; transform: translateY(50px) scale(.94);
+        transition: opacity 1s cubic-bezier(.2,.8,.2,1), transform 1s cubic-bezier(.2,.8,.2,1); }
+    .js .sc-reveal.in { opacity: 1; transform: none; }
+    .js .sc-photo { clip-path: inset(100% 0 0 0 round 1.5rem); transition: clip-path 1.2s .2s cubic-bezier(.77,0,.18,1); }
+    .js .sc-reveal.in .sc-photo { clip-path: inset(0 0 0 0 round 1.5rem); }
+    .js .sc-pop { opacity: 0; transform: scale(.6); transition: opacity .6s, transform .8s cubic-bezier(.34,1.56,.64,1); }
+    .js .sc-reveal.in .sc-pop { opacity: 1; transform: scale(1); }
+
+    /* ---------- 3D tilt ---------- */
+    .tilt-scene { perspective: 1000px; }
+    .tilt-card  { transform-style: preserve-3d; transform: rotateX(var(--rx)) rotateY(var(--ry)); will-change: transform; }
+
+    /* Animated gradient border */
+    .grad-border {
+        position: absolute; inset: -3px; border-radius: 1.65rem; z-index: 0;
+        background: linear-gradient(120deg, #a855f7, #ec4899, #6366f1, #22d3ee, #a855f7);
+        background-size: 300% 300%; animation: gradientShift 6s linear infinite;
+        filter: drop-shadow(0 0 18px rgba(168,85,247,.45));
+    }
+
+    /* Glare following the cursor */
+    .glare {
+        position: absolute; inset: 0; border-radius: 1.5rem; pointer-events: none; opacity: 0;
+        mix-blend-mode: overlay; transition: opacity .3s;
+        background: radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,.7), transparent 55%);
+    }
+    #showcase:hover .glare { opacity: 1; }
+
+    /* Scan line */
+    .scan-line {
+        position: absolute; left: 0; right: 0; height: 3px; pointer-events: none;
+        background: linear-gradient(90deg, transparent, #a855f7, #ec4899, transparent);
+        box-shadow: 0 0 20px 4px rgba(168,85,247,.6);
+        animation: scan 3.2s 1.2s ease-in-out 1 both;
+    }
+
+    /* Depth layers */
+    .z-40  { transform: translateZ(40px); }
+    .z-80  { transform: translateZ(80px); }
+    .z-110 { transform: translateZ(110px); }
+
+    /* Chips */
+    .chip {
+        display: flex; align-items: center; gap: .5rem; padding: .5rem .9rem; border-radius: 9999px;
+        font-size: .85rem; font-weight: 600; white-space: nowrap;
+        background: rgba(255,255,255,.75); color: #374151;
+        backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(168,85,247,.25); box-shadow: 0 10px 30px -10px rgba(168,85,247,.5);
+        animation: chipFloat 5s ease-in-out infinite;
+    }
+    .dark .chip { background: rgba(31,41,55,.75); color: #e5e7eb; }
+
+    /* Badge */
+    .badge-shine::after {
+        content: ""; position: absolute; inset: 0;
+        background: linear-gradient(90deg, transparent, rgba(168,85,247,.25), transparent);
+        animation: shine 3.5s ease-in-out infinite;
+    }
+    .word-in  { animation: wordIn .5s both; }
+    .word-out { animation: wordOut .4s both; }
+
+    .showcase-float { animation: floatY 6s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .blob, .grad-border, .showcase-float, .chip, .scan-line, .badge-shine::after { animation: none !important; }
+        .tilt-card { transform: none !important; }
+    }
+</style>
+
+<!-- Left -->
+<div class="relative flex justify-center items-center py-12 px-6" id="showcase">
+
+    <!-- Morphing blobs with parallax -->
+    <div class="blob-wrap w-80 h-80" style="transform: translate(calc(var(--px) * -40px), calc(var(--py) * -40px));">
+        <div class="blob bg-purple-500"></div>
+    </div>
+    <div class="blob-wrap w-64 h-64 translate-x-16 translate-y-10" style="transform: translate(calc(var(--px) * 50px), calc(var(--py) * 50px));">
+        <div class="blob bg-pink-500" style="animation-duration: 18s; animation-direction: reverse;"></div>
+    </div>
+
+    <!-- Reveal wrapper -->
+    <div class="sc-reveal relative" id="scReveal">
+        <div class="showcase-float">
+            <div class="tilt-scene">
+                <div class="tilt-card relative" id="tiltCard">
+
+                    <!-- Animated gradient border -->
+                    <div class="grad-border"></div>
+
+                    <!-- Photo -->
+                    <div class="sc-photo relative z-10 overflow-hidden rounded-3xl shadow-2xl">
+                        <img src="./images/thejuimage.jpg" alt="Profile photo"
+                             class="w-80 block object-cover" draggable="false">
+                        <div class="glare"></div>
+                        <div class="scan-line"></div>
+                    </div>
+
+                    <!-- Floating chips (depth layers) -->
+                    <div class="absolute -left-10 top-10 z-20 hidden sm:block z-80">
+                        <div class="sc-pop" style="transition-delay:.9s">
+                            <div class="chip" style="--r:-3deg;">✨ Quick Learner</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute -right-12 top-1/3 z-20 hidden sm:block z-110">
+                        <div class="sc-pop" style="transition-delay:1.1s">
+                            <div class="chip" style="--r:3deg; animation-delay:-1.5s;">🚀 Problem Solver</div>
+                        </div>
+                    </div>
+
+                    <div class="absolute -left-6 bottom-20 z-20 hidden sm:block z-40">
+                        <div class="sc-pop" style="transition-delay:1.3s">
+                            <div class="chip" style="--r:-2deg; animation-delay:-3s;">🤝 Team Player</div>
+                        </div>
+                    </div>
+
+                    <!-- Badge -->
+                    <div class="absolute -bottom-6 -right-6 z-30 z-110">
+                        <div class="sc-pop" style="transition-delay:.7s">
+                            <div class="badge-shine relative overflow-hidden bg-white dark:bg-gray-800 shadow-xl rounded-2xl px-6 py-4">
+                                <div class="flex items-center gap-2">
+                                    <span class="relative flex h-3 w-3">
+                                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                                        <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                                    </span>
+                                    <h3 class="text-3xl font-bold text-purple-600">Fresher</h3>
+                                </div>
+                                <p id="badgeWord" class="text-gray-500 dark:text-gray-400 h-6 overflow-hidden">Ready to Work</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        document.documentElement.classList.add('js');
+
+        const wrap   = document.getElementById('showcase');
+        const reveal = document.getElementById('scReveal');
+        const card   = document.getElementById('tiltCard');
+        const word   = document.getElementById('badgeWord');
+        if (!wrap || !reveal || !card) return;
+
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        /* ---- Reveal when scrolled into view ---- */
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(en => { if (en.isIntersecting) { reveal.classList.add('in'); io.disconnect(); } });
+        }, { threshold: 0.25 });
+        io.observe(reveal);
+
+        /* ---- Smooth tilt + glare + blob parallax ---- */
+        if (!reduce) {
+            let tx = 0, ty = 0, cx = 0, cy = 0, raf = null;
+
+            const loop = () => {
+                cx += (tx - cx) * 0.1;
+                cy += (ty - cy) * 0.1;
+                wrap.style.setProperty('--rx', (-cy * 18).toFixed(2) + 'deg');
+                wrap.style.setProperty('--ry', (cx * 18).toFixed(2) + 'deg');
+                wrap.style.setProperty('--px', cx.toFixed(3));
+                wrap.style.setProperty('--py', cy.toFixed(3));
+                raf = (Math.abs(tx - cx) > 0.001 || Math.abs(ty - cy) > 0.001) ? requestAnimationFrame(loop) : null;
+            };
+            const kick = () => { if (!raf) raf = requestAnimationFrame(loop); };
+
+            wrap.addEventListener('pointermove', (e) => {
+                if (e.pointerType !== 'mouse') return;
+                const w = wrap.getBoundingClientRect();
+                const c = card.getBoundingClientRect();
+                tx = (e.clientX - w.left) / w.width - 0.5;
+                ty = (e.clientY - w.top) / w.height - 0.5;
+                wrap.style.setProperty('--mx', ((e.clientX - c.left) / c.width * 100).toFixed(1) + '%');
+                wrap.style.setProperty('--my', ((e.clientY - c.top) / c.height * 100).toFixed(1) + '%');
+                kick();
+            });
+            wrap.addEventListener('pointerleave', () => { tx = 0; ty = 0; kick(); });
+        }
+
+        /* ---- Rotating badge text ---- */
+        const words = ['Ready to Work', 'Quick Learner', 'Open to Roles', 'Eager to Build'];
+        let i = 0;
+        setInterval(() => {
+            word.className = 'text-gray-500 dark:text-gray-400 h-6 overflow-hidden word-out';
+            setTimeout(() => {
+                i = (i + 1) % words.length;
+                word.textContent = words[i];
+                word.className = 'text-gray-500 dark:text-gray-400 h-6 overflow-hidden word-in';
+            }, 400);
+        }, 2800);
+    })();
+</script>
+
+            <!-- Right -->
+
+            <div>
+
+                <h3 class="text-3xl font-bold mb-6">
+
+                    Turning Ideas Into Reality
+
+                </h3>
+
+                <p class="text-gray-600 dark:text-gray-400 leading-8">
+
+                    I love creating responsive websites, AI-powered
+                    applications and modern software solutions.
+                    My goal is to continuously learn emerging technologies
+                    while building impactful applications.
+
+                </p>
+
+                <!-- Skill Bars -->
+
+                <div class="space-y-6 mt-10">
+
+                    <!-- Python -->
+
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+
+                            <span class="font-medium">Python</span>
+
+                            <span>90%</span>
+
+                        </div>
+
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full">
+
+                            <div class="h-3 bg-purple-600 rounded-full w-[90%]"></div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Django -->
+
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+
+                            <span>Django</span>
+
+                            <span>85%</span>
+
+                        </div>
+
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full">
+
+                            <div class="h-3 bg-green-500 rounded-full w-[85%]"></div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Flutter -->
+
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+
+                            <span>Flutter</span>
+
+                            <span>80%</span>
+
+                        </div>
+
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full">
+
+                            <div class="h-3 bg-sky-500 rounded-full w-[80%]"></div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- HTML -->
+
+                    <div>
+
+                        <div class="flex justify-between mb-2">
+
+                            <span>HTML / CSS</span>
+
+                            <span>95%</span>
+
+                        </div>
+
+                        <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded-full">
+
+                            <div class="h-3 bg-orange-500 rounded-full w-[95%]"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="grid md:grid-cols-3 gap-8 mt-24">
+
+            <div class="card-3d glass-3d
+bg-white dark:bg-gray-800
+rounded-3xl shadow-xl
+p-8">
+                <img src="./images/coding.png" class="w-12">
+
+                <h3 class="text-2xl font-bold mt-5">
+
+                    Skills
+
+                </h3>
+
+                <p class="mt-4 text-gray-500 dark:text-gray-400">
+
+                    Python, Django, Flutter,
+                    HTML, CSS,
+                    JavaScript,
+                    MySQL,
+                    Git & GitHub.
+
+                </p>
+
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+                <img src="./images/graduation-hat.png" class="w-12">
+
+                <h3 class="text-2xl font-bold mt-5">
+
+                    Education
+
+                </h3>
+
+                <p class="mt-4 text-gray-500 dark:text-gray-400">
+
+                    M.Sc Computer Science
+
+                    <br>
+
+                    University of Calicut
+
+                </p>
+
+            </div>
+
+            <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-xl p-8 hover:-translate-y-3 hover:shadow-2xl duration-300">
+
+                <img src="./images/idea.png" class="w-12">
+
+                <h3 class="text-2xl font-bold mt-5">
+
+                    Interests
+
+                </h3>
+
+                <p class="mt-4 text-gray-500 dark:text-gray-400">
+
+                    Artificial Intelligence
+
+                    <br>
+
+                    Web Development
+
+                    <br>
+
+                    Mobile Applications
+
+                </p>
+
+            </div>
+
+        </div>
+
+      
+<style>
+    @keyframes dropIn {
+        0%   { opacity: 0; transform: translateY(-420px) rotate(var(--rot, -20deg)) scale(.8); animation-timing-function: cubic-bezier(.55, 0, 1, .45); }
+        55%  { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); animation-timing-function: cubic-bezier(0, .55, .45, 1); }
+        70%  { transform: translateY(-38px) rotate(calc(var(--rot, -20deg) * -.12)); animation-timing-function: cubic-bezier(.55, 0, 1, .45); }
+        82%  { transform: translateY(0) rotate(0deg); animation-timing-function: cubic-bezier(0, .55, .45, 1); }
+        91%  { transform: translateY(-12px); animation-timing-function: cubic-bezier(.55, 0, 1, .45); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes titleIn {
+        from { opacity: 0; transform: translateY(-30px); filter: blur(6px); }
+        to   { opacity: 1; transform: none; filter: none; }
+    }
+
+    /* Hidden only when JS is running, so nothing disappears if JS fails */
+    .js .fall-item,
+    .js .fall-title { opacity: 0; }
+
+    .js .tech-section.in .fall-item {
+        opacity: 1;
+        animation: dropIn 1.3s var(--delay, 0s) both;
+        animation-fill-mode: backwards; /* hidden during delay, hover works after landing */
+    }
+    .js .tech-section.in .fall-title {
+        opacity: 1;
+        animation: titleIn .8s both;
+        animation-fill-mode: backwards;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .js .fall-item, .js .fall-title { opacity: 1 !important; animation: none !important; }
+    }
+</style>
+
+<!-- Technologies -->
+<div class="tech-section text-center mt-24" id="techSection">
+
+    <h3 class="fall-title text-3xl font-bold">
+        Technologies I Use
+    </h3>
+
+    <div class="flex flex-wrap justify-center gap-6 mt-10">
+
+        <div class="fall-item bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-xl hover:scale-110 duration-300">
+            <img src="./images/pycharm-icon.webp" alt="PyCharm" class="w-10">
+        </div>
+
+        <div class="fall-item bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-xl hover:scale-110 duration-300">
+            <img src="./images/vscode.png" alt="VS Code" class="w-10">
+        </div>
+
+        <div class="fall-item bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-xl hover:scale-110 duration-300">
+            <img src="./images/icons8-django-24.png" alt="Django" class="w-10">
+        </div>
+
+        <div class="fall-item bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-xl hover:scale-110 duration-300">
+            <img src="./images/icons8-flutter-48.png" alt="Flutter" class="w-10">
+        </div>
+
+        <div class="fall-item bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-xl hover:scale-110 duration-300">
+            <img src="./images/icons8-mysql-50.png" alt="MySQL" class="w-10">
+        </div>
+
+        <div class="fall-item bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-xl hover:scale-110 duration-300">
+            <img src="./images/github.png" alt="GitHub" class="w-10">
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    (function () {
+        document.documentElement.classList.add('js');
+
+        const section = document.getElementById('techSection');
+        if (!section) return;
+
+        // Stagger each icon + give each a different starting tilt
+        const rots = [-25, 18, -15, 28, -22, 15];
+        section.querySelectorAll('.fall-item').forEach((el, i) => {
+            el.style.setProperty('--delay', (0.25 + i * 0.15) + 's');
+            el.style.setProperty('--rot', rots[i % rots.length] + 'deg');
+        });
+
+        // Trigger when scrolled into view (replays every time it re-enters)
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(en => {
+                if (en.isIntersecting) {
+                    section.classList.add('in');
+                } else {
+                    section.classList.remove('in'); // remove this line to play only once
+                }
+            });
+        }, { threshold: 0.3 });
+
+        io.observe(section);
+    })();
+</script>
+
+</section>
+<!-- --------------------------------projects---------------------------- -->
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="py-24 px-6 lg:px-16">
+
+<div class="max-w-7xl mx-auto">
+
+    <!-- Heading -->
+
+    <div class="text-center">
+
+        <span class="text-purple-600 font-semibold uppercase tracking-[5px]">
+
+            MY WORK
+
+        </span>
+
+        <h2 class="text-5xl font-bold mt-4">
+
+            Featured Projects
+
+        </h2>
+
+        <p class="mt-5 text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+
+            Here are some of my academic and personal projects that
+            demonstrate my programming, problem-solving and software
+            development skills.
+
+        </p>
+
+    </div>
+
+    <!-- Cards -->
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20">
+
+        <!-- Project 1 -->
+
+        <div class="group card-3d
+rounded-3xl overflow-hidden
+bg-white dark:bg-gray-800
+shadow-2xl">
+            <div class="overflow-hidden">
+
+                <img src="./images/placement.png"
+
+                class="h-56 w-full object-cover group-hover:scale-110 duration-500">
+
+            </div>
+
+            <div class="p-8">
+
+                <span class="text-purple-600 text-sm font-semibold">
+
+                    AI PROJECT
+
+                </span>
+
+                <h3 class="text-2xl font-bold mt-3">
+
+                    AI Curriculum Analyzer
+
+                </h3>
+
+                <p class="mt-4 text-gray-600 dark:text-gray-400 leading-7">
+
+                    AI-powered web application that analyzes industry
+                    trends to improve university curriculum and
+                    placement opportunities.
+
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-6">
+
+                    <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">
+
+                        Python
+
+                    </span>
+
+                    <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">
+
+                        Django
+
+                    </span>
+
+                    <span class="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm">
+
+                        MySQL
+
+                    </span>
+
+                </div>
+
+               
+
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="group rounded-3xl overflow-hidden bg-white dark:bg-gray-800 shadow-xl hover:-translate-y-4 duration-500">
+
+            <div class="overflow-hidden">
+
+                <img src="./images/blockchain.jpg"
+
+                class="h-56 w-full object-cover group-hover:scale-110 duration-500">
+
+            </div>
+
+            <div class="p-8">
+
+                <span class="text-blue-600 text-sm font-semibold">
+
+                    BLOCKCHAIN
+
+                </span>
+
+                <h3 class="text-2xl font-bold mt-3">
+
+                    Blockchain Voting
+
+                </h3>
+
+                <p class="mt-4 text-gray-600 dark:text-gray-400 leading-7">
+
+                    Secure digital voting platform using blockchain
+                    technology to improve transparency and eliminate
+                    vote manipulation.
+
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-6">
+
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">
+
+                        Python
+
+                    </span>
+
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">
+
+                        Django
+
+                    </span>
+
+                    <span class="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm">
+
+                        SQL
+
+                    </span>
+
+                </div>
+
+               
+
+            </div>
+
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="group rounded-3xl overflow-hidden bg-white dark:bg-gray-800 shadow-xl hover:-translate-y-4 duration-500">
+
+            <div class="overflow-hidden">
+
+                <img src="./images/portfolio.png"
+
+                class="h-56 w-full object-cover group-hover:scale-110 duration-500">
+
+            </div>
+
+            <div class="p-8">
+
+                <span class="text-pink-600 text-sm font-semibold">
+
+                    WEB DESIGN
+
+                </span>
+
+                <h3 class="text-2xl font-bold mt-3">
+
+                    Personal Portfolio
+
+                </h3>
+
+                <p class="mt-4 text-gray-600 dark:text-gray-400 leading-7">
+
+                    Modern responsive portfolio website built using
+                    HTML, Tailwind CSS and JavaScript with
+                    animations and dark mode.
+
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-6">
+
+                    <span class="px-4 py-2 bg-pink-100 text-pink-700 rounded-full text-sm">
+
+                        HTML
+
+                    </span>
+
+                    <span class="px-4 py-2 bg-pink-100 text-pink-700 rounded-full text-sm">
+
+                        Tailwind
+
+                    </span>
+
+                    <span class="px-4 py-2 bg-pink-100 text-pink-700 rounded-full text-sm">
+
+                        JavaScript
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+<!-- ===== Contact ===== -->
+<!-- Add the "js" class before the section renders, so the hidden start state doesn't flash -->
+<script>document.documentElement.classList.add('js');</script>
+
+<style>
+    @keyframes ringPulse { 0% { transform: scale(1); opacity: .5; } 100% { transform: scale(1.7); opacity: 0; } }
+    @keyframes wiggle { 0%,100% { transform: rotate(0); } 25% { transform: rotate(-14deg) scale(1.15); } 75% { transform: rotate(14deg) scale(1.15); } }
+    @keyframes drawLine { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+    @keyframes ripple { to { transform: scale(4); opacity: 0; } }
+    @keyframes caret { 50% { border-color: transparent; } }
+
+    #contactSection { overflow-x: clip; }
+
+    /* ---------- Reveal ---------- */
+    .js .c-reveal {
+        opacity: 0; filter: blur(8px);
+        transform: translateX(var(--from, -140px)) scale(.92);
+        transition: opacity .9s cubic-bezier(.2,.8,.2,1) var(--delay,0s),
+                    transform .9s cubic-bezier(.2,.8,.2,1) var(--delay,0s),
+                    filter .9s ease var(--delay,0s);
+    }
+    .js #contactSection.in .c-reveal { opacity: 1; transform: none; filter: none; }
+
+    /* Connector line: now sits inside the cards wrapper, so it spans exactly first card to last card */
+    .c-line {
+        position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; margin-left: -1px;
+        background: linear-gradient(#a855f7, #f97316, #ec4899); opacity: .35;
+        transform-origin: top; transform: scaleY(0); border-radius: 2px;
+        pointer-events: none;
+    }
+    #contactSection.in .c-line { animation: drawLine 1.6s .3s cubic-bezier(.6,0,.2,1) forwards; }
+
+    /* Typed heading: wraps normally now (was nowrap + overflow hidden, which clipped the long sentence) */
+    .type-text { display: inline; border-right: 3px solid #a855f7; padding-right: 3px;
+        animation: caret .7s step-end infinite; }
+
+    /* ---------- Card ---------- */
+    .contact-card {
+        --rx: 0deg; --ry: 0deg; --mx: 50%; --my: 50%; --lift: 0px;
+        position: relative; overflow: hidden;
+        transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(var(--lift));
+        transition: transform .2s ease-out, box-shadow .3s;
+        will-change: transform;
+    }
+
+    /* Spotlight border that follows the cursor */
+    .contact-card::before {
+        content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 2px; pointer-events: none;
+        background: radial-gradient(220px circle at var(--mx) var(--my), var(--c1), var(--c2) 45%, transparent 75%);
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor; mask-composite: exclude;
+        opacity: 0; transition: opacity .3s;
+    }
+
+    /* Soft spotlight inside the card */
+    .contact-card .glare {
+        position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .3s;
+        background: radial-gradient(260px circle at var(--mx) var(--my), rgba(255,255,255,.28), transparent 60%);
+    }
+
+    /* Shine sweep on hover */
+    .contact-card .sweep {
+        position: absolute; top: 0; bottom: 0; width: 40%; left: -60%; pointer-events: none;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent);
+        transform: skewX(-20deg); transition: left .8s ease;
+    }
+
+    /* Hover effects only on devices that can really hover (no sticky hover after a tap) */
+    @media (hover: hover) {
+        .contact-card:hover { --lift: -8px; box-shadow: 0 28px 60px -18px var(--glow); }
+        .contact-card:hover::before { opacity: 1; }
+        .contact-card:hover .glare { opacity: 1; }
+        .contact-card:hover .sweep { left: 130%; }
+        .contact-card:hover .icon-emoji { animation: wiggle .6s ease; }
+    }
+
+    /* Icon: magnetic + pulse ring */
+    .icon-wrap { position: relative; transition: transform .25s ease-out; z-index: 1; }
+    .icon-wrap::after { content: ""; position: absolute; inset: 0; border-radius: 1rem; background: var(--c1);
+        z-index: -1; pointer-events: none; animation: ringPulse 2.4s ease-out infinite; }
+    .icon-emoji { display: inline-block; }
+
+    /* Link underline */
+    .c-link { background: linear-gradient(currentColor, currentColor) 0 100% / 0 2px no-repeat;
+        padding-bottom: 2px; transition: background-size .35s, color .3s; }
+    .c-link:hover { background-size: 100% 2px; color: var(--c1); }
+
+    /* Action buttons */
+    .act-btn { position: relative; overflow: hidden; transition: transform .2s, background .2s, color .2s; }
+    .act-btn:hover { transform: scale(1.12) rotate(-4deg); }
+    .act-btn.done { background: #22c55e !important; color: #fff !important; }
+    .act-btn .rip { position: absolute; width: 20px; height: 20px; border-radius: 50%; background: currentColor; opacity: .35;
+        transform: scale(0); animation: ripple .6s ease-out forwards; pointer-events: none; }
+
+    /* Toast */
+    #copyToast { position: fixed; left: 50%; bottom: 30px; z-index: 50; transform: translate(-50%, 30px); opacity: 0;
+        pointer-events: none; transition: opacity .4s ease, transform .4s cubic-bezier(.34,1.56,.64,1); }
+    #copyToast.show { transform: translate(-50%, 0); opacity: 1; }
+
+    @media (prefers-reduced-motion: reduce) {
+        .js .c-reveal { opacity: 1 !important; transform: none !important; filter: none !important; transition: none !important; }
+        .icon-wrap::after, .c-line, .type-text { animation: none !important; }
+        .c-line { transform: none; }
+        .type-text { border: 0; }
+        .contact-card { transform: none !important; }
+    }
+</style>
+
+<section id="contactSection" class="relative py-24 px-6">
+
+    <div class="relative max-w-xl mx-auto">
+
+        <!-- Heading -->
+        <div class="c-reveal text-center mb-10 relative" style="--from:0px; --delay:0s">
+            <span class="uppercase tracking-[5px] text-purple-600 font-semibold text-sm">Contact</span>
+            <h2 class="text-2xl sm:text-3xl font-bold leading-snug mt-3 text-gray-900 dark:text-white">
+                <span class="type-text" id="typeHeading"
+                      data-text="I'm currently looking for internship and full-time opportunities. Feel free to contact me anytime."></span>
+            </h2>
+        </div>
+
+        <!-- Cards (the connector line lives here) -->
+        <div class="relative space-y-6">
+
+            <div class="c-line hidden sm:block"></div>
+
+            <!-- Email -->
+            <div class="c-reveal relative" style="--from:-160px; --delay:.2s">
+                <div class="contact-card tilt flex items-center gap-5 p-6 rounded-3xl
+                            bg-white/70 dark:bg-gray-900/60 backdrop-blur-xl shadow-xl border border-white/30"
+                     style="--c1:#a855f7; --c2:#6366f1; --glow:rgba(168,85,247,.5)">
+                    <div class="glare"></div><div class="sweep"></div>
+
+                    <div class="icon-wrap magnet w-16 h-16 shrink-0 rounded-2xl bg-purple-500 flex items-center justify-center text-2xl text-white">
+                        <span class="icon-emoji">📧</span>
+                    </div>
+
+                    <div class="flex-1 min-w-0 text-left relative">
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white">Email</h3>
+                        <a href="mailto:thejaswinirk678@gmail.com" class="c-link text-gray-500 dark:text-gray-400 break-all">
+                            thejaswinirk678@gmail.com
+                        </a>
+                    </div>
+
+                    <button type="button" class="act-btn shrink-0 w-10 h-10 rounded-xl bg-purple-100 text-purple-600 dark:bg-purple-500/20 relative"
+                            data-copy="thejaswinirk678@gmail.com" aria-label="Copy email">⧉</button>
+                </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="c-reveal relative" style="--from:160px; --delay:.4s">
+                <div class="contact-card tilt flex items-center gap-5 p-6 rounded-3xl
+                            bg-white/70 dark:bg-gray-900/60 backdrop-blur-xl shadow-xl border border-white/30"
+                     style="--c1:#f97316; --c2:#facc15; --glow:rgba(249,115,22,.5)">
+                    <div class="glare"></div><div class="sweep"></div>
+
+                    <div class="icon-wrap magnet w-16 h-16 shrink-0 rounded-2xl bg-orange-500 flex items-center justify-center text-2xl text-white">
+                        <span class="icon-emoji">📱</span>
+                    </div>
+
+                    <div class="flex-1 min-w-0 text-left relative">
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white">Phone</h3>
+                        <!-- NOTE: the tel: number, shown number and copied number must all match. Set your real number in all three. -->
+                        <a href="tel:+917907036776" class="c-link text-gray-500 dark:text-gray-400">1234567890</a>
+                    </div>
+
+                    <button type="button" class="act-btn shrink-0 w-10 h-10 rounded-xl bg-orange-100 text-orange-600 dark:bg-orange-500/20 relative"
+                            data-copy="1234567890" aria-label="Copy phone number">⧉</button>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="c-reveal relative" style="--from:-160px; --delay:.6s">
+                <div class="contact-card tilt flex items-center gap-5 p-6 rounded-3xl
+                            bg-white/70 dark:bg-gray-900/60 backdrop-blur-xl shadow-xl border border-white/30"
+                     style="--c1:#ec4899; --c2:#a855f7; --glow:rgba(236,72,153,.5)">
+                    <div class="glare"></div><div class="sweep"></div>
+
+                    <div class="icon-wrap magnet w-16 h-16 shrink-0 rounded-2xl bg-pink-500 flex items-center justify-center text-2xl text-white">
+                        <span class="icon-emoji">📍</span>
+                    </div>
+
+                    <div class="flex-1 min-w-0 text-left relative">
+                        <h3 class="font-bold text-lg text-gray-900 dark:text-white">Location</h3>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Thalassery,Kerala,India" target="_blank" rel="noopener noreferrer"
+                           class="c-link text-gray-500 dark:text-gray-400">Thalassery, Kerala, India</a>
+                    </div>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Thalassery,Kerala,India" target="_blank" rel="noopener noreferrer"
+                       aria-label="Open in Maps"
+                       class="act-btn shrink-0 w-10 h-10 rounded-xl bg-pink-100 text-pink-600 dark:bg-pink-500/20 flex items-center justify-center relative">↗</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="copyToast" class="px-5 py-3 rounded-full bg-gray-900 text-white shadow-2xl text-sm font-medium" role="status" aria-live="polite">✅ Copied</div>
+</section>
+
+<script>
+    (function () {
+        const section = document.getElementById('contactSection');
+        if (!section) return;
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        /* ---- Typed heading ---- */
+        const h = document.getElementById('typeHeading');
+        const full = h.dataset.text.replace(/\s+/g, ' ').trim();
+        let typing, startTimer;
+
+        const stopTyping = () => { clearInterval(typing); clearTimeout(startTimer); };
+
+        const typeIt = () => {
+            stopTyping();
+            if (reduce) { h.textContent = full; return; }
+            h.textContent = '';
+            startTimer = setTimeout(() => {
+                let i = 0;
+                typing = setInterval(() => {
+                    h.textContent = full.slice(0, ++i);
+                    if (i >= full.length) clearInterval(typing);
+                }, 55);
+            }, 500);
+        };
+
+        /* ---- Reveal on scroll (replays) ---- */
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(en => {
+                if (en.isIntersecting) {
+                    section.classList.add('in');
+                    typeIt();
+                } else {
+                    // remove this else-branch to play only once
+                    section.classList.remove('in');
+                    stopTyping();
+                    if (!reduce) h.textContent = '';
+                }
+            });
+        }, { threshold: 0.15 });
+        io.observe(section);
+
+        /* ---- Tilt + spotlight + magnetic icon (mouse only) ---- */
+        section.querySelectorAll('.tilt').forEach(card => {
+            const icon = card.querySelector('.magnet');
+
+            card.addEventListener('pointermove', (e) => {
+                if (e.pointerType !== 'mouse') return;
+                const r = card.getBoundingClientRect();
+                const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+                card.style.setProperty('--mx', (x * 100).toFixed(1) + '%');
+                card.style.setProperty('--my', (y * 100).toFixed(1) + '%');
+                if (reduce) return;
+                card.style.setProperty('--ry', ((x - .5) * 10).toFixed(2) + 'deg');
+                card.style.setProperty('--rx', ((.5 - y) * 10).toFixed(2) + 'deg');
+                if (icon) {
+                    const ir = icon.getBoundingClientRect();
+                    const dx = e.clientX - (ir.left + ir.width / 2), dy = e.clientY - (ir.top + ir.height / 2);
+                    const pull = Math.max(0, 1 - Math.hypot(dx, dy) / 220);
+                    icon.style.transform = `translate(${dx * pull * .25}px, ${dy * pull * .25}px)`;
+                }
+            });
+
+            card.addEventListener('pointerleave', () => {
+                card.style.setProperty('--rx', '0deg');
+                card.style.setProperty('--ry', '0deg');
+                if (icon) icon.style.transform = '';
+            });
+        });
+
+        /* ---- Ripple + copy + toast ---- */
+        const toast = document.getElementById('copyToast');
+        let toastTimer;
+        const showToast = (msg) => {
+            toast.textContent = '✅ ' + msg;
+            toast.classList.add('show');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
+        };
+
+        const copyText = async (text) => {
+            try {
+                await navigator.clipboard.writeText(text);
+                return true;
+            } catch {
+                try {
+                    const ta = document.createElement('textarea');
+                    ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+                    document.body.appendChild(ta); ta.select();
+                    const ok = document.execCommand('copy');
+                    ta.remove();
+                    return ok;
+                } catch { return false; }
+            }
+        };
+
+        section.querySelectorAll('.act-btn').forEach(btn => {
+            // Remember the original label once, so rapid clicks can't lock in the "✓"
+            const label = btn.textContent.trim();
+            let resetTimer;
+
+            btn.addEventListener('click', async (e) => {
+                const r = btn.getBoundingClientRect();
+                const rip = document.createElement('span');
+                rip.className = 'rip';
+                rip.style.left = (e.clientX - r.left - 10) + 'px';
+                rip.style.top = (e.clientY - r.top - 10) + 'px';
+                btn.appendChild(rip);
+                setTimeout(() => rip.remove(), 600);
+
+                if (!btn.dataset.copy) return;
+
+                const ok = await copyText(btn.dataset.copy);
+                if (!ok) { showToast('Copy failed, please copy manually'); return; }
+
+                btn.firstChild.textContent = '✓';
+                btn.classList.add('done');
+                showToast('Copied: ' + btn.dataset.copy);
+                clearTimeout(resetTimer);
+                resetTimer = setTimeout(() => {
+                    btn.firstChild.textContent = label;
+                    btn.classList.remove('done');
+                }, 1500);
+            });
+        });
+    })();
+</script>
+<style>
+  .icon-wrap { opacity: 0; }
+
+  /* Row is centered and clips sideways overflow so the off-screen start doesn't cause a horizontal scrollbar */
+  .social-row { overflow-x: clip; }
+
+  .social-row.in-view .fly-left   { animation: flyLeft   1s cubic-bezier(.34,1.56,.64,1) .1s forwards, floaty 3.2s ease-in-out 1.4s infinite; }
+  .social-row.in-view .fly-right  { animation: flyRight  1s cubic-bezier(.34,1.56,.64,1) .3s forwards, floaty 3.2s ease-in-out 1.6s infinite; }
+  .social-row.in-view .fly-left-2 { animation: flyLeft   1s cubic-bezier(.34,1.56,.64,1) .5s forwards, floaty 3.2s ease-in-out 1.8s infinite; }
+
+  @keyframes flyLeft {
+    0%   { opacity: 0; transform: translateX(-60vw) rotate(-360deg) scale(.3); filter: blur(8px); }
+    100% { opacity: 1; transform: translateX(0) rotate(0) scale(1); filter: blur(0); }
+  }
+  @keyframes flyRight {
+    0%   { opacity: 0; transform: translateX(60vw) rotate(360deg) scale(.3); filter: blur(8px); }
+    100% { opacity: 1; transform: translateX(0) rotate(0) scale(1); filter: blur(0); }
+  }
+  @keyframes floaty {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .icon-wrap { opacity: 1; animation: none !important; }
+  }
+</style>
+
+<div class="social-row flex justify-center items-center gap-5 pt-6 pb-12 w-full">
+
+  <!-- GitHub (from left) -->
+  <div class="icon-wrap fly-left">
+    <a href="https://github.com/21thejaswini"
+       target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+       class="group relative w-14 h-14 rounded-2xl bg-white dark:bg-gray-800 shadow-lg
+              flex items-center justify-center
+              transition-all duration-300 ease-out
+              hover:bg-gray-900 hover:-translate-y-2 hover:scale-110 hover:rotate-6
+              hover:shadow-[0_12px_30px_rgba(17,24,39,0.45)]">
+      <img src="./images/github.png" alt="GitHub"
+           class="w-7 transition-all duration-300 group-hover:invert group-hover:scale-110">
+      <span class="pointer-events-none absolute -bottom-9 px-2 py-1 rounded-md bg-gray-900 text-white text-xs
+                   opacity-0 translate-y-2 transition-all duration-300
+                   group-hover:opacity-100 group-hover:translate-y-0">GitHub</span>
+    </a>
+  </div>
+
+  <!-- LinkedIn (from right) -->
+  <div class="icon-wrap fly-right">
+    <a href="https://www.linkedin.com/in/thejaswini-rk-967189286"
+       target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+       class="group relative w-14 h-14 rounded-2xl bg-white dark:bg-gray-800 shadow-lg
+              flex items-center justify-center
+              transition-all duration-300 ease-out
+              hover:bg-[#0A66C2] hover:-translate-y-2 hover:scale-110 hover:-rotate-6
+              hover:shadow-[0_12px_30px_rgba(10,102,194,0.55)]">
+      <img src="./images/linkedin.png" alt="LinkedIn"
+           class="w-7 transition-all duration-300 group-hover:brightness-0 group-hover:invert group-hover:scale-110">
+      <span class="pointer-events-none absolute -bottom-9 px-2 py-1 rounded-md bg-[#0A66C2] text-white text-xs
+                   opacity-0 translate-y-2 transition-all duration-300
+                   group-hover:opacity-100 group-hover:translate-y-0">LinkedIn</span>
+    </a>
+  </div>
+
+  <!-- Gmail (from left) -->
+  <div class="icon-wrap fly-left-2">
+    <a href="https://mail.google.com/"
+       target="_blank" rel="noopener noreferrer" aria-label="Gmail"
+       class="group relative w-14 h-14 rounded-2xl bg-white dark:bg-gray-800 shadow-lg
+              flex items-center justify-center
+              transition-all duration-300 ease-out
+              hover:bg-red-500 hover:-translate-y-2 hover:scale-110 hover:rotate-6
+              hover:shadow-[0_12px_30px_rgba(239,68,68,0.55)]">
+      <img src="./images/gmail.png" alt="Gmail"
+           class="w-7 transition-all duration-300 group-hover:brightness-0 group-hover:invert group-hover:scale-110">
+      <span class="pointer-events-none absolute -bottom-9 px-2 py-1 rounded-md bg-red-500 text-white text-xs
+                   opacity-0 translate-y-2 transition-all duration-300
+                   group-hover:opacity-100 group-hover:translate-y-0">Gmail</span>
+    </a>
+  </div>
+
+</div>
+
+<script>
+  const row = document.querySelector('.social-row');
+  new IntersectionObserver((entries, obs) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { row.classList.add('in-view'); obs.disconnect(); }
+    });
+  }, { threshold: 0.3 }).observe(row);
+</script>
+
+
+         
+
+</section>
+
+       <script src="./script.js"></script>
+</body>
+</html>
